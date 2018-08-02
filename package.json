@@ -1,10 +1,12 @@
 {
   "name": "wait-condition",
-  "version": "1.0.1",
+  "version": "1.1.0-tr",
   "description": "Resolve a promise when a condition is met",
-  "main": "index.js",
+  "main": "lib/index.js",
   "scripts": {
-    "test": "jasmine"
+    "test": "jasmine",
+    "build": "yarn clean && babel index.js --out-dir lib",
+    "clean": "rm -fr ./lib"
   },
   "repository": {
     "type": "git",
@@ -19,8 +21,13 @@
     "url": "https://github.com/rafaeleyng/wait-condition/issues"
   },
   "homepage": "https://github.com/rafaeleyng/wait-condition#readme",
-  "devDependencies": {},
-  "dependencies": {
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.3",
+    "babel-loader": "^7.1.5",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-stage-0": "^6.24.1",
     "jasmine": "2.8.0"
-  }
+  },
+  "dependencies": {}
 }
