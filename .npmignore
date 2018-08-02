@@ -1,0 +1,13 @@
+## Diretórios
+node_modules
+spec
+
+## Arquivos
+index.js
+yarn.lock
+
+## Arquivos ocultos
+.gitignore
+.npmignore
+.babelrc
+.*sublime.*
