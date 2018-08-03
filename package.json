@@ -1,12 +1,15 @@
 {
   "name": "wait-condition",
-  "version": "1.1.0-tr",
+  "version": "1.1.1-tr",
   "description": "Resolve a promise when a condition is met",
   "main": "lib/index.js",
   "scripts": {
     "test": "jasmine",
     "build": "yarn clean && babel index.js --out-dir lib",
     "clean": "rm -fr ./lib"
+  },
+  "publishConfig": {
+    "registry": "https://artifactory.globoi.com/artifactory/api/npm/npm-local"
   },
   "repository": {
     "type": "git",
@@ -27,7 +30,10 @@
     "babel-loader": "^7.1.5",
     "babel-preset-env": "^1.7.0",
     "babel-preset-stage-0": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
     "jasmine": "2.8.0"
   },
-  "dependencies": {}
+  "dependencies": {
+    "es6-promise": "^4.2.4"
+  }
 }

@@ -1,3 +1,4 @@
+import Promise from 'es6-promise';
 const timeoutReached = (startTime, timeout) => startTime + timeout < Date.now()
 
 /*
